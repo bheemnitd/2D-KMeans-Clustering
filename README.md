@@ -72,7 +72,41 @@ C is the set of all centroids.
 ### Step 2
 In this step we assign each input value to closest center. This is done by calculating Euclidean(L2) distance between the point and the each centroid.
 
-argminci∈Cdist(ci,x)2
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <semantics>
+    <mrow>
+      <mi>arg</mi>
+      <mo>&#x2061;<!-- ⁡ --></mo>
+      <munder>
+        <mo movablelimits="true" form="prefix">min</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>c</mi>
+            <mi>i</mi>
+          </msub>
+          <mo>&#x2208;<!-- ∈ --></mo>
+          <mi>C</mi>
+        </mrow>
+      </munder>
+      <mi>d</mi>
+      <mi>i</mi>
+      <mi>s</mi>
+      <mi>t</mi>
+      <mo stretchy="false">(</mo>
+      <msub>
+        <mi>c</mi>
+        <mi>i</mi>
+      </msub>
+      <mo>,</mo>
+      <mi>x</mi>
+      <msup>
+        <mo stretchy="false">)</mo>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+    <annotation encoding="application/x-tex">\arg \min_{c_i \in C} dist(c_i, x)^2</annotation>
+  </semantics>
+</math>
 Where dist(.) is the Euclidean distance.
 
 ### Step 3
