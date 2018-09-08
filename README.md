@@ -40,18 +40,19 @@ The above animation is an example of running K-Means Clustering on a two dimensi
 ### Step 1
 We randomly pick K cluster centers(centroids). Let’s assume these are c1,c2,…,ck, and we can say that;
 
-
+![C](https://github.com/bheemnitd/K-Means-Clustering/blob/master/Selection_015.png)
 C is the set of all centroids.
 
 ### Step 2
 In this step we assign each input value to closest center. This is done by calculating Euclidean(L2) distance between the point and the each centroid.
 
-
+![difference](https://github.com/bheemnitd/K-Means-Clustering/blob/master/Selection_016.png)
 Where dist(.) is the Euclidean distance.
 
 ### Step 3
 In this step, we find the new centroid by taking the average of all the points assigned to that cluster.
 
+![ci](https://github.com/bheemnitd/K-Means-Clustering/blob/master/Selection_018.png)
 Si is the set of all points assigned to the ith cluster.
 
 ### Step 4
