@@ -40,7 +40,33 @@ The above animation is an example of running K-Means Clustering on a two dimensi
 ### Step 1
 We randomly pick K cluster centers(centroids). Let’s assume these are c1,c2,…,ck, and we can say that;
 
-C=c1,c2,…,ck
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <semantics>
+    <mrow>
+      <mi>C</mi>
+      <mo>=</mo>
+      <mrow class="MJX-TeXAtom-ORD">
+        <msub>
+          <mi>c</mi>
+          <mn>1</mn>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>c</mi>
+          <mn>2</mn>
+        </msub>
+        <mo>,</mo>
+        <mo>&#x2026;</mo>
+        <mo>,</mo>
+        <msub>
+          <mi>c</mi>
+          <mi>k</mi>
+        </msub>
+      </mrow>
+    </mrow>
+    <annotation encoding="application/x-tex">C = {c_1, c_2,…, c_k}</annotation>
+  </semantics>
+</math>
 C is the set of all centroids.
 
 ### Step 2
