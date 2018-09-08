@@ -40,79 +40,18 @@ The above animation is an example of running K-Means Clustering on a two dimensi
 ### Step 1
 We randomly pick K cluster centers(centroids). Let’s assume these are c1,c2,…,ck, and we can say that;
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <semantics>
-    <mrow>
-      <mi>C</mi>
-      <mo>=</mo>
-      <mrow class="MJX-TeXAtom-ORD">
-        <msub>
-          <mi>c</mi>
-          <mn>1</mn>
-        </msub>
-        <mo>,</mo>
-        <msub>
-          <mi>c</mi>
-          <mn>2</mn>
-        </msub>
-        <mo>,</mo>
-        <mo>&#x2026;</mo>
-        <mo>,</mo>
-        <msub>
-          <mi>c</mi>
-          <mi>k</mi>
-        </msub>
-      </mrow>
-    </mrow>
-    <annotation encoding="application/x-tex">C = {c_1, c_2,…, c_k}</annotation>
-  </semantics>
-</math>
+
 C is the set of all centroids.
 
 ### Step 2
 In this step we assign each input value to closest center. This is done by calculating Euclidean(L2) distance between the point and the each centroid.
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <semantics>
-    <mrow>
-      <mi>arg</mi>
-      <mo>&#x2061;<!-- ⁡ --></mo>
-      <munder>
-        <mo movablelimits="true" form="prefix">min</mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <msub>
-            <mi>c</mi>
-            <mi>i</mi>
-          </msub>
-          <mo>&#x2208;<!-- ∈ --></mo>
-          <mi>C</mi>
-        </mrow>
-      </munder>
-      <mi>d</mi>
-      <mi>i</mi>
-      <mi>s</mi>
-      <mi>t</mi>
-      <mo stretchy="false">(</mo>
-      <msub>
-        <mi>c</mi>
-        <mi>i</mi>
-      </msub>
-      <mo>,</mo>
-      <mi>x</mi>
-      <msup>
-        <mo stretchy="false">)</mo>
-        <mn>2</mn>
-      </msup>
-    </mrow>
-    <annotation encoding="application/x-tex">\arg \min_{c_i \in C} dist(c_i, x)^2</annotation>
-  </semantics>
-</math>
+
 Where dist(.) is the Euclidean distance.
 
 ### Step 3
 In this step, we find the new centroid by taking the average of all the points assigned to that cluster.
 
-ci=1|Si|∑xi∈Sixi
 Si is the set of all points assigned to the ith cluster.
 
 ### Step 4
