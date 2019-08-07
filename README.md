@@ -1,6 +1,6 @@
 
 ## K-Means Clustering
-Grouping the similar kind of object is known as clustering. The K-means clustering is nonparametric unsupervised learning algorithm where K denotes the number of groups, it is very often used when labeled data is not available. In this post we will implement K-Means algorithm using Python from scratch.
+Grouping the similar kind of object is known as clustering. The K-means clustering is nonparametric unsupervised machine learning algorithm where K denotes the number of groups, it is very often used when labeled data is not available. In this post we will implement K-Means algorithm using Python from scratch.
 
 
 ![K-Means-Clustering](https://i.imgur.com/S65Sk9c.jpg)
